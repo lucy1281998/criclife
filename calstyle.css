@@ -1,0 +1,64 @@
+session_start();
+  if(isset($_POST["submit"]))
+  {
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
+
+
+    $localconnect = new mysqli("localhost", "root", "", "cricbuzz");
+    if($localconnect->connect_error)
+    {
+      die("connection failed". $localconnect->connect_error);
+    }
+    else
+    {
+      echo "connection successful";
+    }
+
+
+    if(empty($user) || empty($pass))
+    {
+      die("Fields are empty");
+    }
+
+    $sqlqry =  "SELECT * FROM user_signup WHERE fname = '".$user."' AND pass = '".$pass."'";
+     
+    // $user = "rahul";
+    // $pass = 12345;
+
+    if ($localconnect->query($sqlqry))
+    {
+      $row = mysqli_fetch_array($localconnect->query($sqlqry));
+      if($row['emailid'] == $user and $row['pass'] == $pass)
+      {
+        echo "Welcome";
+        $first = $row['emailid']; 
+        $_SESSION["user"]= $first;
+        // header("location:index.php");
+        echo "<script>hello world</script>";
+        echo "<script>window.location.href='index.php'</script>";
+      }
+      
+      // else if(($row['fname'] == $user) and ($row['pass'] == $pass))
+      // {
+      //  $first = $row['fname']; 
+      
+      //  $_SESSION["user"]=$first;
+      //  header("location:index.php");
+      //  echo "Welcome";
+      // }
+      else
+      {
+        // echo "Wrong username and password";
+        header("location:wrongdata.html");
+      }
+    }
+    else
+    {
+      die($localconnect->error);
+    }
+
+    
+    
+    $localconnect->close();
+}

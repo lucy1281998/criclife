@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///K:/mysite/project/index.html#section1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>criclife</title>
+	<link rel="stylesheet" type="text/css" href="./criclife_files/style.css">
+
+</head>
+<body>
+	<div class="header">
+		<div class="headercontainer">
+			<div class="logo">
+				<img src="./criclife_files/cricket1.png">
+				
+			</div>
+			<div id="title">
+				<a style="color: blue">cric</a><a style="color: black">life</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="file:///K:/mysite/project/index.html">Home</a></li>
+					<li><a href="file:///K:/mysite/project/index.html#section1">Club Joinig</a></li>
+          <li><a href="file:///K:/mysite/project/index.html#section2">Ground Booking</a></li>
+					
+					<li><a href="file:///K:/mysite/project/index.html">Updates</a></li>
+					<li><a href="file:///K:/mysite/project/index.html">About-us</a></li>
+					<li><a href="file:///K:/mysite/project/index.html">Contact-us</a></li>
+					<li>
+				<button onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="button" style="vertical-align:middle"><span>SignUp </span></button>
+			</li>
+				</ul>
+				
+		</div>
+    </div>
+</div>
+			
+<div class="w3-content w3-display-container" style="margin-top:140px;">
+  <img class="mySlides" src="./criclife_files/pic4.jpg" style="width: 100%; height: 700px; display: none;">
+  <img class="mySlides" src="./criclife_files/pic1.jpg" style="width: 100%; height: 700px; display: none;">
+  <img class="mySlides" src="./criclife_files/pic2.jpg" style="width: 100%; height: 700px; display: none;">
+  <img class="mySlides" src="./criclife_files/pic5.jpg" style="width: 100%; height: 700px; display: none;">
+  <img class="mySlides" src="./criclife_files/pic3.jpg" style="width: 100%; height: 700px; display: block;">
+  <img class="mySlides" src="./criclife_files/img6.jpg" style="width: 100%; height: 700px; display: none;">
+  <img class="mySlides" src="./criclife_files/img7.jpg" style="width: 100%; height: 700px; display: none;">
+ 
+  <img class="mySlides" src="./criclife_files/img8.jpg" style="width: 100%; height: 700px; display: none;">
+
+
+  <button class="btn1" onclick="plusDivs(-1)">«</button>
+  <button class="btn2" onclick="plusDivs(1)">»</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div id="id01" class="modal">
+	 <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="close" title="Close Modal">×</span>
+  
+  <form class="modal-content animate" action="file:///K:/action_page.php">
+    <div class="imgcontainer">
+      
+      <img style="margin-left:140px;margin-top: 10px" src="./criclife_files/man.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>First Name</b></label>
+      <input class="textfieldstyle" type="text" placeholder="Enter First Name" name="fname" required=""><br>
+
+      <label><b>Last Name</b></label>
+      <input class="textfieldstyle" type="text" placeholder="Enter Last Name" name="Lname" required=""><br>
+      <label><b>Date of Birth</b></label>
+      <input class="textfieldstyle" type="date" placeholder="Enter Last Name" name="dob" required=""><br>
+      <label><b>Gender</b></label>
+     
+      
+  	  <input type="radio" name="gender" value="male"> Male
+  	  <input type="radio" name="gender" value="female"> Female<br>
+ 	  
+ 	  <label><b>Country</b></label>
+      <input class="textfieldstyle" type="text" placeholder="Country Name" name="cname" required=""><br>
+
+
+
+      <label><b>Phone Number</b></label>
+      <input class="textfieldstyle" type="number" placeholder="Enter Phone Number" name="fname" required=""><br>
+      <label><b>Address</b></label>
+      <input class="textfieldstyle" type="text" placeholder="Enter Address" name="Aname" required=""><br>
+
+      <label><b>Pin Code</b></label>
+      <input class="textfieldstyle" type="number" placeholder="Enter Pin code" name="pincode" required=""><br>
+      <label><b>Email Id</b></label>
+      <input class="textfieldstyle" type="text" placeholder="Enter Email Id" name="Emailid" required=""><br>
+      <label><b>Password</b></label>
+      <input class="textfieldstyle" type="password" placeholder="Enter password" name="Emailid" required=""><br>
+      <label><b> Confirm Password</b></label>
+      <input class="textfieldstyle" type="password" placeholder="Enter password" name="Emailid" required=""><br>
+      
+              <button class="btnsignup" type="submit">SignUp</button>  
+           		<button class="btnlogin" type="submit"> <a href="file:///K:/mysite/project/index.html#"></a> Login</button>
+
+		   	  <div class="container" style="background-color:#f1f1f1">
+		      <button class="btn3" type="button" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;">Cancel</button>
+    
+   			 </div>
+   	
+      
+    </div></form>
+
+  
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script src="./criclife_files/jquery.min.js.download"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html,body').animate({
+        scrollTop: $(this.hash).offset().top
+      }, 1800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+body, html, .main {
+  height: 100%;
+ 
+
+    
+}
+
+section {
+    min-height: 100%;
+
+
+}
+</style>
+
+
+
+ <br><br><br>
+                                  <div id="section1">
+                                    <section style="background-color:gray"> 
+                                  <style>    
+
+
+                                  /* Center website */
+                                  .main {
+                                      max-width:100%;
+                                      margin-left: -16px; 
+                                      
+                                  }
+
+                                  h1 {
+                                      font-size: 50px;
+                                      word-break: break-all;
+                                  }
+
+                                  .row {
+                                      margin: 10px -16px;
+                                  }
+
+                                  /* Add padding BETWEEN each column */
+                                  .row,
+                                  .row > .column {
+                                      padding: 8px;
+                                  }
+
+                                  /* Create three equal columns that floats next to each other */
+                                  .column {
+                                      float: left;
+                                      width: 33.33%;
+                                      display: none; /* Hide all elements by default */
+                                  }
+
+                                  /* Clear floats after rows */ 
+                                  .row:after {
+                                      content: "";
+                                      display: table;
+                                      clear: both;
+                                  }
+
+                                  /* Content */
+                                  
+                                     .content {
+                                          background-color: white;
+                                          padding: 10px;
+                                          margin-left: 100px;
+                                          margin-top: 10px;
+                                          height: 288px;
+                                          width: 267%;
+                                          margin-top: -173px;
+                                  }
+
+                                  /* The "show" class is added to the filtered elements */
+                                  .show {
+                                    display: block;
+                                  }
+
+                                  /* Style the buttons */
+                                  .btn {
+                                    border: none;
+                                    outline: none;
+                                    padding: 12px 16px;
+                                    background-color: white;
+                                    cursor: pointer;
+                                    display: block;
+                                    width: 140px;
+                                    margin-left: 20px;
+                                  }
+
+                                  .btn:hover {
+                                    background-color: #ddd;
+                                  }
+
+                                  .btn.active {
+                                    background-color: #666;
+                                    color: white;
+                                  }
+                                  </style>
+                                  
+                                  
+
+                                  <!-- MAIN (Center website) -->
+                                  <div class="main">
+
+                                  <h1>MYLOGO.COM</h1>
+                                  <hr>
+
+                                  <h2>PORTFOLIO</h2>
+
+                                  <div>
+                                    <button class="btn active" onclick="filterSelection(&#39;all&#39;)"> Show all</button>
+                                    <button id="myBtnContainer" class="btn" onclick="filterSelection(&#39;nature&#39;)"> Nature</button>
+                                    <button class="btn" onclick="filterSelection(&#39;cars&#39;)"> Cars</button>
+                                    <button class="btn" onclick="filterSelection(&#39;people&#39;)"> People</button>
+                                  </div>
+
+                                  <!-- Portfolio Gallery Grid -->
+                                  <div style="margin-left: 100px;">
+                                  <div class="row">
+                                    <div class="column nature show">
+                                      <div class="content">
+                                       <form style="background-image:url(image/content.jpg);">
+                                         
+                                              <label><b>Email</b></label>
+                                              <input type="text" placeholder="Enter Email" name="email" required="">
+
+                                              <label><b>Password</b></label>
+                                              <input type="password" placeholder="Enter Password" name="psw" required="">
+
+                                              <label><b>Repeat Password</b></label>
+                                              <input type="password" placeholder="Repeat Password" name="psw-repeat" required="">
+
+                                       </form> 
+                                       
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="column cars">
+                                      <div class="content">
+                                         <img src="./criclife_files/content.jpg" alt="Mountains" style="width:100%">
+                                      </div>
+                                    </div>
+                                   
+                                    <div class="column people">
+                                      <div class="content">
+                                         <img src="./criclife_files/content.jpg" alt="Mountains" style="width:100%">
+                                      </div>
+                                    </div>
+                                   
+                                  <!-- END GRID -->
+                                  </div>
+
+                                  <!-- END MAIN -->
+                                  </div>
+                                  </div>
+
+                                  <script>
+                                  filterSelection("all")
+                                  function filterSelection(c) {
+                                    var x, i;
+                                    x = document.getElementsByClassName("column");
+                                    if (c == "all") c = "";
+                                    for (i = 0; i < x.length; i++) {
+                                      w3RemoveClass(x[i], "show");
+                                      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                    }
+                                  }
+
+                                  function w3AddClass(element, name) {
+                                    var i, arr1, arr2;
+                                    arr1 = element.className.split(" ");
+                                    arr2 = name.split(" ");
+                                    for (i = 0; i < arr2.length; i++) {
+                                      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                                    }
+                                  }
+
+                                  function w3RemoveClass(element, name) {
+                                    var i, arr1, arr2;
+                                    arr1 = element.className.split(" ");
+                                    arr2 = name.split(" ");
+                                    for (i = 0; i < arr2.length; i++) {
+                                      while (arr1.indexOf(arr2[i]) > -1) {
+                                        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                                      }
+                                    }
+                                    element.className = arr1.join(" ");
+                                  }
+
+
+                                  // Add active class to the current button (highlight it)
+                                  var btnContainer = document.getElementById("myBtnContainer");
+                                  var btns = btnContainer.getElementsByClassName("myBtnContainer");
+                                  for (var i = 0; i < btns.length; i++) {
+                                    btns[i].addEventListener("click", function(){
+                                      var current = document.getElementsByClassName("active");
+                                      current[0].className = current[0].className.replace(" active", "");
+                                      this.className += " active";
+                                    });
+                                  }
+                                  </script>
+                                        
+                                    </section>
+                                     </div>
+
+<div class="main" id="section2">
+  <section style="background-color:red;height: 100%">
+
+    
+
+   
+  </section>
+</div>
+
+
+
+
+</body></html>

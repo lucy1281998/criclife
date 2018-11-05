@@ -1,0 +1,68 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	/*background-image: url('image/admin1.png');
+	width: 100%
+	background-repeat:;
+    background-size:;
+}*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 70px 40px;
+    text-decoration: none;
+    height: 30%;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.header
+{
+    width: 100%;
+    height: 29%
+    background-color:red;
+}
+td{
+text-align: center;
+}
+input[type="file"]
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#styletable
+{
+        padding-left: 59px;
+    padding-top: 24px;
+        
+    padding-right: 45px;
+}

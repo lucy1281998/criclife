@@ -1,0 +1,95 @@
+.aboutus
+{
+   
+   margin-top: -500px;
+   margin-left: 100px;
+ 
+}
+.aboutus h2
+{
+	font-size:50px;
+    line-height:100px;
+    text-align: ;
+   
+   
+    text-transform: none;
+    text-align: justify;
+    margin-top: 70px;
+    font-family: 'Raleway', sans-serif;
+     color: rgba(255,255,255,0.9);
+    
+}
+.aboutus-right
+{
+	margin-left:50%;
+	margin-top: -22%;
+  background-color: red;
+}
+.aboutus-right p
+{
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  color: rgba(255,255,255,0.6);
+}
+.aboutus-right h3
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+   color: rgba(280,280,255,0.9);
+}
+#contact-us
+{
+  background-image: url("image/contact.pn");
+
+}
+.contact-us
+{
+  margin-left: 50%;
+  margin-right: 2%;
+  couser
+  
+  margin-top:%;
+  height:80%;
+}
+#contbtn
+{
+  background-color: #f4511e;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+#contbtn:hover {opacity: 1}
+#leb
+{
+ font-family: 'Share Tech', sans-serif; 
+ font-size:18px;
+
+display: block;
+width: 150px;
+}
+.first-section
+{
+
+ 
+  height:200px;
+}
+.second-section
+{
+  
+}
+.about-us
+{
+
+
+    width: 356px;
+    height: 136px;
+    margin-top:-133px;
+    margin-left:807px;
+}
